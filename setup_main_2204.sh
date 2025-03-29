@@ -27,7 +27,7 @@ sudo apt update && sudo apt install -y code
 rm microsoft.gpg
 
 # PyCharm
-sudo snap install pycharm-community --classic
+sudo snap install pycharm-professional --classic
 
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
