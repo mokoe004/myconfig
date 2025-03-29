@@ -59,10 +59,12 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda
 export PATH="$HOME/miniconda/bin:$PATH"
 eval "$($HOME/miniconda/bin/conda shell.bash hook)"
+$HOME/miniconda/bin/conda init zsh
 conda init
 conda config --set auto_activate_base false
 conda install -y jupyterlab numpy pandas matplotlib scipy
 pip install virtualenv pipx
+
 
 # Virt-Manager for Windows VM
 sudo apt install -y virt-manager qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
