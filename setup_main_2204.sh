@@ -48,6 +48,8 @@ sudo apt install -y ausweisapp2
 # Sciebo / ownCloud
 sudo add-apt-repository ppa:nextcloud-devs/client -y
 sudo apt update && sudo apt install -y owncloud-client
+chmod +x ./pin-next.sh
+bash ./pin-next.sh
 
 # PDF Tools
 sudo apt install -y pdfarranger
